@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Pemrograman Web</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<link rel="stylesheet" media="all" href="style/type/folks.css" />
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+<![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<script type="text/javascript">
+$(function() {
+			if ($('#sliderholder-cycle').length) {
+			// timeouts per slide (in seconds) 
+			var timeouts = [150,390,25]; 
+			function calculateTimeout(currElement, nextElement, opts, isForward) { 
+			    var index = opts.currSlide; 
+			    return timeouts[index] * 1000;
+			}
+			jQuery('#sliderholder-cycle').cycle({
+				fx: 'fade',
+				pager: '.slidernav',
+				prev:    '.sliderprev',
+        		next:    '.slidernext',
+				speed: 1000,
+				timeoutFn: calculateTimeout,
+				pagerEvent: 'click',
+    			pauseOnPagerHover: true,
+    			cleartype: 1
+});
+			jQuery('#sliderholder-cycle').css("display", "block");
+			jQuery('.slidernav').css("display", "block");
+			
+			}
+}); 
+</script>
+</head>
+<body background="images/s.jpg">
+<div id="container"> 
+  <!-- Begin Header Wrapper -->
+  <div id="page-top">
+    <div id="header-wrapper"> 
+      <!-- Begin Header -->
+      <div id="header">
+        <div id="logo"><a href="index.html"><img src="images/lt.jpg"></a></div>
+        <!-- Logo --> 
+        <!-- Begin Menu -->
+        <div id="menu-wrapper">
+          <div id="smoothmenu1" class="ddsmoothmenu">
+            <ul>
+              <li><a href="index.html" class="selected">Home</a></li>
+              <li><a href="profil.html">Profil</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Menu --> 
+         <p>
+          <!-- End Menu -->
+        </p>
+        <p>&nbsp;          </p>
+        </div>
+      <!-- End Header --> 
+    </div>
+  </div>
+  <!-- End Header Wrapper --> 
+  
+  <!-- Begin Slider -->
+  <div id="cycle-wrapper">
+    <div id="sliderholder-cycle"> <img src="images/J-Rocks2.jpg" width="960" height="380" />
+      <div>
+        <img src="images/hesty.jpg" width="960" height="380" />
+      </div>
+      <img src="images/bg.jpg" width="960" height="380" /> </div>
+    <ul class="slidernav">
+    </ul>
+    <div class="sliderdir"> <a href="#"><span class="sliderprev">Prev</span></a> <a href="#"><span class="slidernext">Next</span></a> </div>
+  </div>
+  <!-- End Slider --> 
+  
+  <!-- Begin Wrapper -->
+  <div id="wrapper"> 
+    
+    <!-- Begin Intro -->
+    <div class="intro">
+      <h1><marquee><img src="images/nama.jpg"></marquee></h1>
+    </div>
+    <!-- End Intro --> 
+    
+    <!-- Begin About -->
+    <div id="about">
+      <div class="one-fourth"> <a href="#"><img src="images/Chelsea.jpg" alt="" width="211" height="122" /></a>
+        <h4>Chelsea FC</h4>
+        <p align="justify">Chelsea Football Club adalah sebuah klub sepak bola Inggris yang bermarkas di Fulham, London. Chelsea didirikan pada tahun 1905. Stadion kandang mereka Stamford Bridge.</p>
+      </div>
+      <div class="one-fourth"> <a href="#"><img src="images/naruto.jpg" alt="" width="211" height="124" /></a>
+        <h4>Naruto</h4>
+        <p align="justify">Naruto (ナルト) adalah manga dan anime karya Masashi Kishimoto. Naruto Uzumaki, seorang ninja remaja yang berisik, hiperaktif, dan ambisius.</p>
+      </div>
+      <div class="one-fourth"> <a href="#"><img src="images/jrocks.jpg" alt="" width="213" height="127" /></a>
+        <h4>J-Rocks</h4>
+        <p align="justify">J-Rocks adalah band dari Jakarta yang berdiri pada 9 November 2003 dengan personel Iman (vokal, gitar), Sony (gitar), Wima (bass), dan Anton (drum). Aliran band ini adalah Japanese pop/rock.
+</p>
+      </div>
+      <div class="one-fourth last"> <a href="#"><img src="images/harry potter5.jpg" alt="" width="211" height="125" /></a>
+        <h4>Harry Potter</h4>
+        <p align="justify">Harry Potter merupakan seri novel fantasi karya J. K. Rowling dari Inggris mengenai seorang anak laki-laki bernama Harry Potter. </p>
+      </div>
+    </div>
+    <!-- End About --> 
+    
+  </div>
+  
+  <!-- End Wrapper -->
+  <div class="clearfix"></div>
+  <div class="push"></div>
+</div>
+
+<!-- Begin Footer -->
+<div id="footer-wrapper">
+  <div id="footer">
+    <div id="footer-content"> 
+      
+      <!-- Begin Copyright -->
+      <div id="copyright">
+        <p>© Praktikum Pemrograman Web 2012 | Hesty Wida</p>
+      </div>
+      <!-- End Copyright --> 
+      
+      <!-- Begin Social Icons -->
+      <div id="socials">
+        <ul>
+          <li><a href="#"><img src="style/images/icon-rss.png" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/icon-twitter.png" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/icon-dribble.png" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/icon-tumblr.png" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/icon-flickr.png" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/icon-facebook.png" alt="" /></a></li>
+        </ul>
+      </div>
+      <!-- End Social Icons --> 
+      
+    </div>
+  </div>
+</div>
+<!-- End Footer -->
+</body>
+</html>
